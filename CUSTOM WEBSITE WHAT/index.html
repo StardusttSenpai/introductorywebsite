@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <!-- Include Slick Carousel JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1>All About Veronica!!!</h1>
+        <p>This is a simple website I made (with the help of ChatGPT) to show some things about me lolz</p>
+    </div>
+
+    <p>My favorite bands/musicians</p>
+    <div class="slider">
+        <div><img src="images/BABYMETAL.jpg" alt="Image 1"></div>
+        <div><img src="images/ATARASHII GAKKO!.jpg" alt="Image 2"></div>
+        <div><img src="images/NewJeans.jpg" alt="Image 3"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: false, // Hide the slide number buttons
+                autoplay: true,
+                autoplaySpeed: 2000, // Set the speed of the slider in milliseconds
+                prevArrow: false, // Hide the previous button
+                nextArrow: false // Hide the next button
+            });
+        });
+    </script>
+</body>
+
+</html>
